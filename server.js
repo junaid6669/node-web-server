@@ -55,6 +55,13 @@ app.get('/about',(req, res)=>{
   });
 });
 
+app.get('/projects',(req, res)=>{
+  res.render('projects.hbs', {
+    pageTitle:"Hello from Prjects Page",
+    welcomeMessage:'Hello Projects page'
+  });
+});
+
 app.get('/help',(req, res)=>{
   res.send('Help Page');
 });
